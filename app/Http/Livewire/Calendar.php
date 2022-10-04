@@ -55,6 +55,7 @@ class Calendar extends Component
      *
      * @return response()
      */
+    
     public function render()
     {
         $events = Event::select('id','title','start')->get();
