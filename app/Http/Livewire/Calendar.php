@@ -28,6 +28,7 @@ class Calendar extends Component
         $input['title'] = $event['title'];
         
         $input['start'] = $event['start'];
+        
         Event::create($input);
     }
 
