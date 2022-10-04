@@ -9,6 +9,7 @@ use Livewire\Component;
 class Calendar extends Component
 {
 
+    
     public $events = '';
 
     public function getevent()
