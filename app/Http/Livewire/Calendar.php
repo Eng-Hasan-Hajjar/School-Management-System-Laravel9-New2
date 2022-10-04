@@ -46,6 +46,7 @@ class Calendar extends Component
         $eventdata = Event::find($event['id']);
         
         $eventdata->start = $event['start'];
+        
         $eventdata->save();
     }
 
