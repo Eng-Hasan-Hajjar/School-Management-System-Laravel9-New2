@@ -40,9 +40,11 @@ class Calendar extends Component
      *
      * @return response()
      */
+    
     public function eventDrop($event, $oldEvent)
     {
         $eventdata = Event::find($event['id']);
+        
         $eventdata->start = $event['start'];
         $eventdata->save();
     }
