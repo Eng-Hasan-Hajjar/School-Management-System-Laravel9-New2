@@ -23,6 +23,7 @@ class Calendar extends Component
      *
      * @return response()
      */
+    
     public function addevent($event)
     {
         $input['title'] = $event['title'];
