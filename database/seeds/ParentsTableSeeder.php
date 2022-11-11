@@ -19,7 +19,7 @@ class ParentsTableSeeder extends Seeder
     {
         DB::table('my__parents')->delete();
             $my_parents = new My_Parent();
-            $my_parents->email = 'parent@yahoo.com';
+            $my_parents->email = 'parent@gmail.com';
             $my_parents->password = Hash::make('12345678');
             $my_parents->Name_Father = ['en' => 'emad', 'ar' => 'عماد محمد'];
             $my_parents->National_ID_Father = '1234567810';
@@ -29,8 +29,8 @@ class ParentsTableSeeder extends Seeder
             $my_parents->Nationality_Father_id = Nationalitie::all()->unique()->random()->id;
             $my_parents->Blood_Type_Father_id =Type_Blood::all()->unique()->random()->id;
             $my_parents->Religion_Father_id = Religion::all()->unique()->random()->id;
-            $my_parents->Address_Father ='القاهرة';
-            $my_parents->Name_Mother = ['en' => 'SS', 'ar' => 'سس'];
+            $my_parents->Address_Father ='دبي';
+            $my_parents->Name_Mother = ['en' => 'Salma Al Base', 'ar' => 'سلمى الباز'];
             $my_parents->National_ID_Mother = '1234567810';
             $my_parents->Passport_ID_Mother = '1234567810';
             $my_parents->Phone_Mother = '1234567810';
@@ -38,7 +38,7 @@ class ParentsTableSeeder extends Seeder
             $my_parents->Nationality_Mother_id = Nationalitie::all()->unique()->random()->id;
             $my_parents->Blood_Type_Mother_id =Type_Blood::all()->unique()->random()->id;
             $my_parents->Religion_Mother_id = Religion::all()->unique()->random()->id;
-            $my_parents->Address_Mother ='القاهرة';
+            $my_parents->Address_Mother ='دبي';
             $my_parents->save();
 
     }
