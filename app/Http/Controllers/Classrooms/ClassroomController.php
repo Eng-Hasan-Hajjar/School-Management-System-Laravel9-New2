@@ -48,7 +48,8 @@ class ClassroomController extends Controller
 
         try {
 
-            $validated = $request->validated();
+         //   $validated = $request->validated();
+         $request->validated();
             foreach ($List_Classes as $List_Class) {
 
                 $My_Classes = new Classroom();
@@ -137,7 +138,8 @@ class ClassroomController extends Controller
     public function destroy(Request $request)
     {
 
-        $Classrooms = Classroom::findOrFail($request->id)->delete();
+     //  $Classrooms = Classroom::findOrFail($request->id)->delete();
+     Classroom::findOrFail($request->id)->delete();
         toastr()->error(trans('messages.Delete'));
         return redirect()->route('Classrooms.index');
 
@@ -158,7 +160,8 @@ class ClassroomController extends Controller
     {
         $Grades = Grade::all();
         $Search = Classroom::select('*')->where('Grade_id','=',$request->Grade_id)->get();
-        return view('pages.My_Classes.My_Classes',compact('Grades'))->withDetails($Search);
+      return view('pages.My_Classes.My_Classes',compact('Grades'))->withDetails($Search);
+    //  return view('pages.My_Classes.My_Classes',compact('Grades'))->with($Search);
 
     }
 
