@@ -16,7 +16,7 @@ trait MeetingZoomTrait
             'password' => $request->password,
             'start_time' => $request->start_time,
             'timezone' => config('zoom.timezone')
-          // 'timezone' => 'Africa/Cairo'
+          // 'timezone' => 'Asia/Syria'
         ];
         $meeting = Zoom::meeting()->make($meetingData);
 
