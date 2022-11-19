@@ -73,9 +73,11 @@
                     @if (isset($details))
 
                         <?php $List_Classes = $details; ?>
+                        
                     @else
 
                         <?php $List_Classes = $My_Classes; ?>
+
                     @endif
 
                         <?php $i = 0; ?>
