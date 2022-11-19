@@ -4,6 +4,7 @@ namespace App\Repository;
 use App\Models\Gender;
 use App\Models\Specialization;
 use App\Models\Teacher;
+use Exception;
 use Illuminate\Support\Facades\Hash;
 
 class TeacherRepository implements TeacherRepositoryInterface{
