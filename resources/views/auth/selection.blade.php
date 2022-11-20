@@ -8,7 +8,7 @@
     <meta name="description" content="Webmin - Bootstrap 4 & Angular 5 Admin Dashboard Template" />
     <meta name="author" content="potenzaglobalsolutions.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>برنامج مورا سوفت لادارة المدارس</title>
+    <title>برنامج حجار لادارة المدارس</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" />
@@ -44,7 +44,7 @@
                                 <a class="btn btn-default col-lg-3" title="معلم" href="{{route('login.show','teacher')}}">
                                     <img alt="user-img" width="100px;" src="{{URL::asset('assets/images/teacher.png')}}">
                                 </a>
-                                <a class="btn btn-default col-lg-3" title="ادمن" href="{{route('login.show','admin')}}">
+                                <a class="btn btn-default col-lg-3" title="مدير" href="{{route('login.show','admin')}}">
                                     <img alt="user-img" width="100px;" src="{{URL::asset('assets/images/admin.png')}}">
                                 </a>
                             </div>
