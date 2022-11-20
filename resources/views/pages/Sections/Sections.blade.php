@@ -74,6 +74,7 @@
                                                                         <td>{{ $list_Sections->Name_Section }}</td>
                                                                         <td>{{ $list_Sections->My_classs->Name_Class }}
                                                                         </td>
+
                                                                         <td>
                                                                             @if ($list_Sections->Status === 1)
                                                                                 <label
@@ -376,7 +377,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
